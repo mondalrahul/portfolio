@@ -251,17 +251,25 @@ $("[data-form-btn]").click(function (e) {
       "Access-Control-Allow-Headers": "*",
     },
     data: {
-      from: {
-        email: "support@filed.pro",
+      headers: {
+        "Content-Type": "application/json",
+        "X-Requested-With": "XMLHttpRequest",
+        Authorization: "Bearer {place your token here without brackets}",
       },
-      to: [
-        {
-          email: "gallantlehmann4@justzeus.com",
+      data: {
+        from: {
+          email: "support@filed.pro",
         },
-      ],
-      subject: "Hello from MailerSend!",
-      text: "Greetings from the team, you got this message through MailerSend.",
-      html: "Greetings from the team, you got this message through MailerSend.",
+        to: [
+          {
+            email: "gallantlehmann4@justzeus.com",
+          },
+        ],
+        subject: "Hello from MailerSend!",
+        text: "Greetings from the team, you got this message through MailerSend.",
+        html: "Greetings from the team, you got this message through MailerSend.",
+      },
+      request_type: "POST",
     },
     success: function (data) {
       console.log(data);
