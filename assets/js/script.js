@@ -254,7 +254,7 @@ $("[data-form-btn]").click(function (e) {
       headers: {
         "Content-Type": "application/json",
         "X-Requested-With": "XMLHttpRequest",
-        "Authorization": "Bearer {place your token here without brackets}",
+        "Authorization": "mlsn.ac02d397e41e2a0ee0062c4df6b20f2a863f7f7b2fdf7fc03291834222d4f429",
       },
       data: {
         from: {
