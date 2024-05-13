@@ -244,7 +244,7 @@ $("[data-form-btn]").click(function (e) {
 
   $.ajax({
     type: "POST",
-    url: "https://api.mailersend.com/v1/email",
+    url: "https://proxy.filed.pro/api.php",
     headers: {
       "Access-Control-Allow-Origin": "https://mondalrahul.github.io",
       "Access-Control-Allow-Methods": "POST",
