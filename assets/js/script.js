@@ -241,6 +241,7 @@ setInterval(rotateText, 4000);
 $("[data-form-btn]").click(function (e) {
   e.preventDefault();
   var formData = $("[data-form").serializeArray();
+  console.log(formData);
 
   $.ajax({
     type: "POST",
@@ -265,9 +266,9 @@ $("[data-form-btn]").click(function (e) {
             email: "gallantlehmann4@justzeus.com",
           },
         ],
-        subject: "Hello from MailerSend!",
-        text: "Greetings from the team, you got this message through MailerSend.",
-        html: "Greetings from the team, you got this message through MailerSend.",
+        subject: "Lead From Portfolio Site Form",
+        text: 'Name: ' + formData[0].value + '\nEmail: ' + formData[1].value + '\nMessage: ' + formData[2].value,
+        html: 'Name: ' + formData[0].value + '\nEmail: ' + formData[1].value + '\nMessage: ' + formData[2].value,
       },
       request_type: "POST",
       url: "https://api.mailersend.com/v1/email",
