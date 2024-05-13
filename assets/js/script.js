@@ -247,6 +247,8 @@ $("[data-form-btn]").click(function (e) {
     url: "https://proxy.filed.pro/api.php",
     headers: {
       "Access-Control-Allow-Origin": "https://mondalrahul.github.io",
+      "Access-Control-Allow-Methods": "*",
+      "Access-Control-Allow-Headers": "*",
     },
     data: {
       from: {
