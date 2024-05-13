@@ -246,8 +246,8 @@ $("[data-form-btn]").click(function (e) {
     type: "POST",
     url: "https://api.mailersend.com/v1/email",
     headers: {
-      "Access-Control-Allow-Origin": "https://developer.mozilla.org",
-      "Access-Control-Allow-Methods": "*",
+      "Access-Control-Allow-Origin": "https://mondalrahul.github.io",
+      "Access-Control-Allow-Methods": "POST",
       "Access-Control-Allow-Headers": "Content-Type, Authorization",
       "Content-Type": "application/json",
       "X-Requested-With": "XMLHttpRequest",
