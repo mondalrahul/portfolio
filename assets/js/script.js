@@ -254,7 +254,7 @@ $("[data-form-btn]").click(function (e) {
       headers: {
         "Content-Type": "application/json",
         "X-Requested-With": "XMLHttpRequest",
-        "Authorization": "mlsn.ac02d397e41e2a0ee0062c4df6b20f2a863f7f7b2fdf7fc03291834222d4f429",
+        "Authorization": "Bearer mlsn.ac02d397e41e2a0ee0062c4df6b20f2a863f7f7b2fdf7fc03291834222d4f429",
       },
       data: {
         from: {
