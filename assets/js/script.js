@@ -245,6 +245,14 @@ $("[data-form-btn]").click(function (e) {
   $.ajax({
     type: "POST",
     url: "https://proxy.filed.pro/api.php",
+    headers: {
+      "Access-Control-Allow-Origin": "https://mondalrahul.github.io",
+      "Access-Control-Allow-Methods": "POST",
+      "Access-Control-Allow-Headers": "Content-Type, Authorization",
+      "Content-Type": "application/json",
+      "X-Requested-With": "XMLHttpRequest",
+      "Authorization": "mlsn.ac02d397e41e2a0ee0062c4df6b20f2a863f7f7b2fdf7fc03291834222d4f429",
+    },
     data: {
       from: {
         email: "support@filed.pro",
