@@ -250,7 +250,7 @@ $("[data-form-btn]").click(function (e) {
       "Access-Control-Allow-Methods": "*",
       "Access-Control-Allow-Headers": "*",
     },
-    data: {
+    data: JSON.stringify({
       headers: {
         "Content-Type": "application/json",
         "X-Requested-With": "XMLHttpRequest",
@@ -270,7 +270,7 @@ $("[data-form-btn]").click(function (e) {
         html: "Greetings from the team, you got this message through MailerSend.",
       },
       request_type: "POST",
-    },
+    }),
     success: function (data) {
       console.log(data);
     },
