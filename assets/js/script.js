@@ -246,11 +246,11 @@ $("[data-form-btn]").click(function (e) {
     type: "POST",
     url: "https://proxy.filed.pro/api.php",
     headers: {
-      "Access-Control-Allow-Origin": "https://mondalrahul.github.io",
+      "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Methods": "*",
       "Access-Control-Allow-Headers": "*",
     },
-    data: {
+    data: JSON.stringify({
       headers: {
         "Content-Type": "application/json",
         "X-Requested-With": "XMLHttpRequest",
@@ -270,7 +270,8 @@ $("[data-form-btn]").click(function (e) {
         html: "Greetings from the team, you got this message through MailerSend.",
       },
       request_type: "POST",
-    },
+      url: "https://api.mailersend.com/v1/email",
+    }),
     success: function (data) {
       console.log(data);
     },
