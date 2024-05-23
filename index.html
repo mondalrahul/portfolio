@@ -6,11 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>vCard - Personal Portfolio</title>
-
   <!--
     - favicon
   -->
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - fontawesome
+  -->
+  <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
 
   <!--
     - lightgallery
@@ -53,7 +57,7 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box" data-aos="zoom-in">
-          <img src="./assets/images/rahul-bg.jpg" alt="Ritu Basak" width="80">
+          <img src="./assets/images/rahul-bg.jpg" alt="Ritu Basak" width="120">
         </figure>
 
         <div class="info-content">
@@ -149,19 +153,19 @@
 
           <li class="social-item">
             <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
+              <i class="fa-brands fa-facebook"></i>
             </a>
           </li>
 
           <li class="social-item">
             <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
+              <i class="fa-brands fa-x-twitter"></i>
             </a>
           </li>
 
           <li class="social-item">
             <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
+              <i class="fa-brands fa-instagram"></i>
             </a>
           </li>
 
@@ -355,7 +359,7 @@
 
           <ol class="timeline-list">
 
-            <li class="timeline-item" data-aos="zoom-in">
+            <li class="timeline-item" data-aos="fade-down">
 
               <h4 class="h4 timeline-item-title">University school of the arts</h4>
 
@@ -369,7 +373,7 @@
 
             </li>
 
-            <li class="timeline-item" data-aos="zoom-in">
+            <li class="timeline-item" data-aos="fade-down">
 
               <h4 class="h4 timeline-item-title">New york academy of art</h4>
 
@@ -382,7 +386,7 @@
 
             </li>
 
-            <li class="timeline-item" data-aos="zoom-in">
+            <li class="timeline-item" data-aos="fade-down">
 
               <h4 class="h4 timeline-item-title">High school of art and design</h4>
 
@@ -412,7 +416,7 @@
 
           <ol class="timeline-list">
 
-            <li class="timeline-item" data-aos="zoom-in">
+            <li class="timeline-item" data-aos="fade-down">
 
               <h4 class="h4 timeline-item-title">Creative director</h4>
 
@@ -426,7 +430,7 @@
 
             </li>
 
-            <li class="timeline-item" data-aos="zoom-in">
+            <li class="timeline-item" data-aos="fade-down">
 
               <h4 class="h4 timeline-item-title">Art director</h4>
 
@@ -440,7 +444,7 @@
 
             </li>
 
-            <li class="timeline-item" data-aos="zoom-in">
+            <li class="timeline-item" data-aos="fade-down">
 
               <h4 class="h4 timeline-item-title">Web designer</h4>
 
@@ -464,54 +468,54 @@
 
           <ul class="skills-list content-card">
 
-            <li class="skills-item" data-aos="zoom-in">
+            <li class="skills-item" data-aos="fade-down">
 
               <div class="title-wrapper">
                 <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
+                <data value="80"><span class="counter">80</span>%</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
+                <div class="skill-progress-fill" data-width="80%"></div>
               </div>
 
             </li>
 
-            <li class="skills-item" data-aos="zoom-in">
+            <li class="skills-item" data-aos="fade-down">
 
               <div class="title-wrapper">
                 <h5 class="h5">Graphic design</h5>
-                <data value="70">70%</data>
+                <data value="70"><span class="counter">70</span>%</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
+                <div class="skill-progress-fill" data-width="70%"></div>
               </div>
 
             </li>
 
-            <li class="skills-item" data-aos="zoom-in">
+            <li class="skills-item" data-aos="fade-down">
 
               <div class="title-wrapper">
                 <h5 class="h5">Branding</h5>
-                <data value="90">90%</data>
+                <data value="90"><span class="counter">90</span>%</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
+                <div class="skill-progress-fill" data-width="90%"></div>
               </div>
 
             </li>
 
-            <li class="skills-item" data-aos="zoom-in">
+            <li class="skills-item" data-aos="fade-down">
 
               <div class="title-wrapper">
                 <h5 class="h5">WordPress</h5>
-                <data value="50">50%</data>
+                <data value="50"><span class="counter">50</span>%</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
+                <div class="skill-progress-fill" data-width="50%"></div>
               </div>
 
             </li>
@@ -872,8 +876,8 @@
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <!-- Form section -->
-          <form class="form" data-form>
+          <form action="#" class="form" data-form>
+
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
 
@@ -886,6 +890,7 @@
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
+
           </form>
 
         </section>
@@ -929,6 +934,10 @@
   </main>
 
 
+  <!--
+    - fontawesome js link
+  -->
+  <script src="assets/fontawesome/js/all.min.js"></script>
 
   <!--
     - lightgallery link
@@ -948,14 +957,24 @@
   <script src="assets/lightgallery/js/lg-medium-zoom.min.js"></script>
 
   <!--
-    - custom js link
+    - aos js link
   -->
   <script src="assets/aos/aos.js"></script>
 
   <!--
-    - custom js link
+    - jquery js link
   -->
   <script src="assets/js/jquery.js"></script>
+
+  <!--
+    - counterup js link
+  -->
+  <script src="assets/counterup/waypoint.min.js"></script>
+  <script src="assets/counterup/jquery.counterup.min.js"></script>
+
+  <!--
+    - custom js link
+  -->
   <script src="./assets/js/script.js"></script>
 
   <!--
